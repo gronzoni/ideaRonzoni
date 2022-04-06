@@ -7,6 +7,13 @@
 background-color:aquamarine;
 grid-area: header;
 } 
+.header{
+  background-image: linear-gradient(green, aquamarine, pink, white);
+}
+.logo{
+  transform:skew(5deg, 10deg);
+}
+
 .nav {
   background-color: brown;
   grid-area: nav;
@@ -23,20 +30,19 @@ grid-area: header;
   "primeraCaja primeraCaja"
   "segundaCaja terceraCaja";
 }
-  .caja1 {
+  
+.caja1 {
     background-color:aquamarine;
-    grid-area: primeraCaja;
+    grid-area: primeraCaja;}
     
-    
-    }
     .caja2 {
     background-color:aquamarine;
-    grid-area: segundaCaja;
-    }
+    grid-area: segundaCaja; }
+    
     .caja3 {
     background-color:aquamarine;
     grid-area: terceraCaja;
-    }
+  }
 
 
 
