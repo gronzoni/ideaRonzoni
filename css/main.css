@@ -1,0 +1,236 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+background-color:aquamarine;
+grid-area: header;
+} 
+.nav {
+  background-color: brown;
+  grid-area: nav;
+}
+.principal {
+  background-color:aquamarine;
+  grid-area: principal;
+  display: grid;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80% 20%;
+  grid-template-areas: 
+  "primeraCaja primeraCaja"
+  "segundaCaja terceraCaja";
+}
+  .caja1 {
+    background-color:aquamarine;
+    grid-area: primeraCaja;
+    
+    
+    }
+    .caja2 {
+    background-color:aquamarine;
+    grid-area: segundaCaja;
+    }
+    .caja3 {
+    background-color:aquamarine;
+    grid-area: terceraCaja;
+    }
+
+
+
+.footer {
+  background-color:aquamarine;
+  grid-area: footer;
+  padding-left: 3%;
+  padding-top: 0.5%;
+  
+}
+.grid {
+  height: 125vh;
+  margin: 0%;
+  display: grid;
+  
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 10% 4% auto 10%;
+  grid-template-areas:
+  "header header header" 
+  "nav nav nav "
+  "principal principal principal"
+  "footer footer footer "
+}
+
+@media only screen and (max-width: 768px){
+  .grid {
+  height: 125vh;
+  margin: 0%;
+  display: grid;
+  
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+  "header" 
+  "principal"
+  "footer";}
+  .nav {display: none;}
+}
+  
+@media only screen and (max-width: 768px){
+  .principal {
+  background-color:aquamarine;
+  grid-area: principal;
+  display: grid;
+  
+  
+  grid-template-columns: 100%;
+  grid-template-rows:repeat(3, auto);
+  grid-template-areas: 
+  "primeraCaja"
+  "segundaCaja"
+  "terceraCaja";}
+}
+@media only screen and (max-width: 768px){ 
+  .principal1 {
+    background-color:aquamarine;
+    grid-area: principal1;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr;
+    grid-template-areas: 
+    "cuartaCaja"
+    "quintaCaja";}
+
+  .caja4{
+    grid-area:cuartaCaja;
+
+  } 
+  .caja5{
+    grid-area:quintaCaja;
+  } 
+}
+
+.logo {
+  float: left;
+  padding-left: 5%;
+}
+.BordesRedondos {
+  border-radius: 30px;
+}
+.redes-up{
+  float: right;
+  padding-top: 2%;
+  padding-right: 5%;
+}
+
+.nav{
+  background-color: rgb(190, 70, 134);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .nav ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+  .nav ul li{
+      display: inline-block;
+  
+  }
+  .nav ul li a{
+      color:antiquewhite;
+      display: block;
+      padding: 10px 90px
+      ;
+      text-decoration: none;
+  }
+  .nav ul li a:hover{
+      background-color:rgb(8, 96, 131);
+  }
+
+  .principal1 {
+    background-color:aquamarine;
+    grid-area: principal;
+    display: grid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "cuartaCaja quintaCaja";
+  } 
+  .caja4 {
+    background-color:aquamarine;
+    grid-area: cuartaCaja;
+    background-image: url(../img/taller1.jpg);
+    background-repeat: no-repeat;
+    
+    }
+    .caja5 {
+    background-color:aquamarine;
+    grid-area: quintaCaja;
+    
+    }
+    .principal2 {
+      background-color:aquamarine;
+      grid-area: principal;
+      display: grid;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 
+      "sextaCaja septimaCaja";
+    } 
+    .caja6 {
+      background-color:aquamarine;
+      grid-area: sextaCaja;
+      
+      
+      }
+      .caja7 {
+      background-color:aquamarine;
+      grid-area: septimaCaja;
+      
+      } 
+      @media only screen and (max-width: 768px){ 
+        .principal2 {
+          background-color:aquamarine;
+          grid-area: principal;
+          display: grid;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-template-areas: 
+          "sextaCaja"
+          "septimaCaja";
+        }
+      }
+       
+        .caja6 {
+          background-color:aquamarine;
+          grid-area: sextaCaja;
+          
+          
+          }
+          .caja7 {
+          background-color:aquamarine;
+          grid-area: septimaCaja;
+
+        
+
+
+
+
+
+
+
+
+
+
+    
+    
+     
+    
+      
+        
