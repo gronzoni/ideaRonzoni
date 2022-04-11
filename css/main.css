@@ -1,242 +1,201 @@
-*{
-  margin: 0;
-  padding: 0;
+@@ -0,0 +1,199 @@
+/*===============Propiedades Globales================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
-.header {
-background-color:aquamarine;
-grid-area: header;
+
+/*===================MENU==========================*/
+
+ #menu a, button{
+     font-size: 18px !important;
+     font-weight: 600;
+
+ }
+
+ #menu a{
+     color:#3f3f3f;
+
+ }
+/*===================SLIDER DE IMAGENES==========================*/
+
+.carousel-inner {
+    max-height:39rem !important;
+}
+
+/*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
+
+
+
+#img-equipo{
+    max-height:30rem !important;
+    width:50%;
+}
+
+
+/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
+#local {
+    margin-top:50px;
+    background-color: #f3f3f3;
+    display:flex;
+    justify-content: center; 
+    padding-bottom: 300px; 
+}
+
+.mapa {
+    background: url(../img/mapa.png);
+    width:100%;
+    height:500px;
+}
+
+
+.wrapper-local {
+    width:50%;
+    margin-left:100px;
+    padding-top:150px;
+}
+
+
+/*===========================SECCION EQUIPO==================================*/
+#numeros-local{
+    margin:0 !important;
+    padding:0 !important;
+}
+#numeros-local div {
+    padding: 0 20px 0 0;   
+    text-align:left;
+    height:48px;
+}
+
+#numeros-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+  }
+#numeros-local div:not(:first-child) {
+    padding-left:20px;
+  }
+
+#numeros-local p{
+    margin:0;
+}
+
+/*=========================CONTACTOS BACKGROUND================================*/
+
+#bg-contactos{
+    position:relative;
+    top: -130px;
+    background-color:grey ;
 } 
-.header{
-  background-image: linear-gradient(green, aquamarine, pink, white);
-}
-.logo{
-  transform:skew(5deg, 10deg);
+
+ #seccion-contacto{
+    background-color: grey;
+    min-height:500px;
+    position:relative;
 }
 
-.nav {
-  background-color: brown;
-  grid-area: nav;
-}
-.principal {
-  background-color:aquamarine;
-  grid-area: principal;
-  display: grid;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/*=========================CONTACTOS FORMULARIO================================*/
 
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 80% 20%;
-  grid-template-areas: 
-  "primeraCaja primeraCaja"
-  "segundaCaja terceraCaja";
+#contenedor-formulario{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius:5px;
+
 }
-  
-.caja1 {
-    background-color:aquamarine;
-    grid-area: primeraCaja;}
-    
-    .caja2 {
-    background-color:aquamarine;
-    grid-area: segundaCaja; }
-    
-    .caja3 {
-    background-color:aquamarine;
-    grid-area: terceraCaja;
-  }
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
 
 
 
-.footer {
-  background-color:aquamarine;
-  grid-area: footer;
-  padding-left: 3%;
-  padding-top: 0.5%;
-  
+
+/*=========================FOOTER================================*/
+
+footer {
+    background: grey;
+    min-height: 100px;;
 }
-.grid {
-  height: 125vh;
-  margin: 0%;
-  display: grid;
-  
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 10% 4% auto 10%;
-  grid-template-areas:
-  "header header header" 
-  "nav nav nav "
-  "principal principal principal"
-  "footer footer footer "
+footer p{
+    color:#f3f3f3;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
 }
 
-@media only screen and (max-width: 768px){
-  .grid {
-  height: 125vh;
-  margin: 0%;
-  display: grid;
-  
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas:
-  "header" 
-  "principal"
-  "footer";}
-  .nav {display: none;}
-}
-  
-@media only screen and (max-width: 768px){
-  .principal {
-  background-color:aquamarine;
-  grid-area: principal;
-  display: grid;
-  
-  
-  grid-template-columns: 100%;
-  grid-template-rows:repeat(3, auto);
-  grid-template-areas: 
-  "primeraCaja"
-  "segundaCaja"
-  "terceraCaja";}
-}
-@media only screen and (max-width: 768px){ 
-  .principal1 {
-    background-color:aquamarine;
-    grid-area: principal1;
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows:1fr;
-    grid-template-areas: 
-    "cuartaCaja"
-    "quintaCaja";}
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
 
-  .caja4{
-    grid-area:cuartaCaja;
-
-  } 
-  .caja5{
-    grid-area:quintaCaja;
-  } 
-}
-
-.logo {
-  float: left;
-  padding-left: 5%;
-}
-.BordesRedondos {
-  border-radius: 30px;
-}
-.redes-up{
-  float: right;
-  padding-top: 2%;
-  padding-right: 5%;
-}
-
-.nav{
-  background-color: rgb(190, 70, 134);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  .nav ul{
-      list-style: none;
-      margin: 0;
-      padding: 0;
-  }
-  .nav ul li{
-      display: inline-block;
-  
-  }
-  .nav ul li a{
-      color:antiquewhite;
-      display: block;
-      padding: 10px 90px
-      ;
-      text-decoration: none;
-  }
-  .nav ul li a:hover{
-      background-color:rgb(8, 96, 131);
-  }
-
-  .principal1 {
-    background-color:aquamarine;
-    grid-area: principal;
-    display: grid;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "cuartaCaja quintaCaja";
-  } 
-  .caja4 {
-    background-color:aquamarine;
-    grid-area: cuartaCaja;
-    background-image: url(../img/taller1.jpg);
-    background-repeat: no-repeat;
-    
+@media (max-width:1200px){
+    #intro, #equipo {
+        width:90% !important;
+        margin:auto;
     }
-    .caja5 {
-    background-color:aquamarine;
-    grid-area: quintaCaja;
-    
+
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+   }
+   .wrapper-local {
+    width:90%;
+    margin:auto;
+    padding-top:50px;    
+   }
+
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+    #intro, #equipo{
+        width:90% !important;
+        margin:auto;
     }
-    .principal2 {
-      background-color:aquamarine;
-      grid-area: principal;
-      display: grid;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: 
-      "sextaCaja septimaCaja";
-    } 
-    .caja6 {
-      background-color:aquamarine;
-      grid-area: sextaCaja;
-      
-      
-      }
-      .caja7 {
-      background-color:aquamarine;
-      grid-area: septimaCaja;
-      
-      } 
-      @media only screen and (max-width: 768px){ 
-        .principal2 {
-          background-color:aquamarine;
-          grid-area: principal;
-          display: grid;
-          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr 1fr;
-          grid-template-areas: 
-          "sextaCaja"
-          "septimaCaja";
-        }
-      }
-       
-        .caja6 {
-          background-color:aquamarine;
-          grid-area: sextaCaja;
-          
-          
-          }
-          .caja7 {
-          background-color:aquamarine;
-          grid-area: septimaCaja;
-
-        
 
 
+    #img-equipo{
+        max-height:20rem !important;
+        width:90%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    .mapa img {
+        width:100%;
+        height:auto;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
 
 
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
 
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+    }
 
-
-
-
-
-    
-    
-     
-    
-      
-        
+    .icono-wrap{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+} 
